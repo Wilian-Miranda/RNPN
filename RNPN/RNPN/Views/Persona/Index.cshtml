@@ -1,0 +1,90 @@
+﻿@model RNPN.Dominio.Persona
+@{
+    ViewData["Title"] = "Inicio";
+}
+<style>
+    body {
+        font-family: Arial;
+        background-color: #f3f3f3;
+        box-sizing: border-box;
+    }
+
+    form {
+        background-color: white;
+        border-radius: 15px;
+        color: #999;
+        font-size: 0.8em;
+        padding: 20px;
+        margin: 50px auto;
+        width: 350px;
+    }
+
+    input, textarea {
+        border: 0;
+        outline: none;
+        width: 280px;
+    }
+
+    .field {
+        border: solid 1px #ccc;
+        padding: 10px;
+        border-radius: 10px
+    }
+
+        .field:focus {
+            border-color: #18A383;
+        }
+
+    .center-content {
+        text-align: center;
+    }
+
+    .btn {
+        border-radius: 3px;
+        display: inline-block;
+        padding: 10px 10px;
+        text-decoration: none;
+        text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+        box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    }
+
+    .btn-green {
+        color: white;
+        background-color: #3CC93F;
+    }
+
+        .btn-green:hover {
+            background-color: #37B839;
+        }
+
+        .btn-green:active {
+            background-color: #29962A;
+        }
+</style>
+
+<div class="container-fluid formulario" style="width:max-content;">
+    @using (Html.BeginForm("Registro", "Persona", FormMethod.Post))
+    {
+        <i class="fas fa-sign-in-alt fa-3x"></i><h1>Registro</h1>
+        <div class="form-group col-md-8 ">
+            <i style="color: blue;" class="wow animate__animated animate__heartBeat fas fa-user-tag fa-2x" azul data-wow-offset="15" data-wow-iteration="15" data-wow-duration="3s"></i>
+            <label><strong>Nombre de persona:</strong></label>
+            <input asp-for="NombrePersona" class="field" type="text" placeholder="Inserte nombre">
+            <span asp-validation-for="NombrePersona" class="badge-danger"></span><br /><br />
+
+            <i style="color: green;" class="wow animate__animated animate__heartBeat fas fa-sort-numeric-up fa-2x" verde data-wow-offset="15" data-wow-iteration="15" data-wow-duration="3s"></i>
+            <label><strong>Edad: </strong></label>
+            <input asp-for="EdadPersona" class="field" type="number" placeholder="Inserte edad">
+            <span asp-validation-for="EdadPersona" class="badge-danger"></span><br /><br />
+
+            <i style="color: red;" class="wow animate__animated animate__heartBeat fas fa-book-open fa-2x" azul data-wow-offset="15" data-wow-iteration="15" data-wow-duration="3s"></i>
+            <label><strong>Descripcion:</strong></label>
+            <input asp-for="DescripcionPersona" class="field" type="text" placeholder="Inserte descripcion">
+            <span asp-validation-for="DescripcionPersona" class="badge-danger"></span><br /><br />
+
+            <div class="center-content">
+                <button type="submit" class="btn btn-green animate__animated animate__shakeX" value="" style="width:100%"><i class="fas fa-save fa-2x"></i>&ensp;&ensp;Enviar</button>
+            </div>
+        </div>
+    }
+</div>
