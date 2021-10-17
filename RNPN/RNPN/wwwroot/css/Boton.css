@@ -1,0 +1,6 @@
+﻿.boton {
+    height: 40px;
+    width: 12em;
+    transition: .3s ease all;
+    border-radius: 5px;
+}

@@ -23,7 +23,7 @@ namespace RNPN.Repository
             appDb.SaveChanges();
         }
 
-        public List<Persona> ListaPersonas()
+        public ICollection<Persona> ListaPersonas()
         {
             return appDb.Persona.ToList();
         }

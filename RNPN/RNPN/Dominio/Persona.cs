@@ -21,7 +21,7 @@ namespace RNPN.Dominio
 
         [Display(Name = "Edad: ")]
         [Required(ErrorMessage = "La edad es requerida")]
-        [Range(18, 120, ErrorMessage = "Solo mayores de 18 anios")]
+        [Range(18, 120, ErrorMessage = "Solo mayores de 18 años")]
         public int EdadPersona { get; set; }
 
         [Display(Name = "Descripcion: ")]

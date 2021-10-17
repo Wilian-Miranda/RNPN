@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Perlera89\\Desktop\\RNPN\\RNPN\\RNPN\\RNPN.csproj": {}
+    "C:\\Users\\Jose\\Desktop\\RNPN\\RNPN\\RNPN\\RNPN.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Perlera89\\Desktop\\RNPN\\RNPN\\RNPN\\RNPN.csproj": {
+    "C:\\Users\\Jose\\Desktop\\RNPN\\RNPN\\RNPN\\RNPN.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Perlera89\\Desktop\\RNPN\\RNPN\\RNPN\\RNPN.csproj",
+        "projectUniqueName": "C:\\Users\\Jose\\Desktop\\RNPN\\RNPN\\RNPN\\RNPN.csproj",
         "projectName": "RNPN",
-        "projectPath": "C:\\Users\\Perlera89\\Desktop\\RNPN\\RNPN\\RNPN\\RNPN.csproj",
-        "packagesPath": "C:\\Users\\Perlera89\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Perlera89\\Desktop\\RNPN\\RNPN\\RNPN\\obj\\",
+        "projectPath": "C:\\Users\\Jose\\Desktop\\RNPN\\RNPN\\RNPN\\RNPN.csproj",
+        "packagesPath": "C:\\Users\\Jose\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jose\\Desktop\\RNPN\\RNPN\\RNPN\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Perlera89\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jose\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -81,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

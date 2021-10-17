@@ -1,0 +1,13 @@
+﻿body div.contenedor_general {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    border: 1px solid gainsboro;
+    border-radius: 14px;
+    padding: 1em;
+    font-size: 12pt;
+    background-color: white;
+}
+
+body {
+    background-color: whitesmoke !important;
+}

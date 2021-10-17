@@ -1,0 +1,32 @@
+﻿.boton:hover {
+    background-color: rgb(21, 206, 21) !important;
+    font-weight: bold;
+}
+
+.boton_success {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right !important;
+    margin-bottom: 1em;
+}
+
+    .boton_success span {
+        position: absolute;
+    }
+
+    .boton_success:hover span {
+        margin-right: 5em;
+    }
+
+    .boton_success i {
+        margin-right: 8em;
+        opacity: 0;
+    }
+
+    .boton_success:hover i {
+        position: absolute;
+        margin-left: 16em;
+        opacity: 1;
+        transition: 0.4s ease all;
+    }

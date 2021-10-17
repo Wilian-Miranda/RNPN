@@ -9,6 +9,6 @@ namespace RNPN.Service
     public interface IPersona
     {
         void Guardar(Persona persona);
-        List<Persona> ListaPersonas();
+        ICollection<Persona> ListaPersonas();
     }
 }

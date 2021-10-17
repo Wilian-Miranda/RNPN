@@ -24,7 +24,7 @@ namespace RNPN.Controllers
 
         public IActionResult Index()
         {
-            //for(var i=0; i<=10; i++)
+            //for (var i = 0; i <= 100; i++)
             //{
             //    Persona persona = new Persona();
             //    persona.NombrePersona = "Manuel";
@@ -58,7 +58,10 @@ namespace RNPN.Controllers
 
         public IActionResult ListaPersonas()
         {
-            return View();
+            var listaPersonasJson = _persona.ListaPersonas();
+            //creando json con la lista anterior
+            return Json(new { data = listaPersonasJson });
+            //return View();
         }
 
         public IActionResult Privacy()

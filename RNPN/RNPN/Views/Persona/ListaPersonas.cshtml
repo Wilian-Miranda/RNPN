@@ -1,7 +1,54 @@
 ﻿@{
     ViewData["Title"] = "Lista";
 }
+<head>
+    <link rel="stylesheet" href="~/css/Boton.css" />
+    <link rel="stylesheet" href="~/css/Boton_success.css" />
+    <link rel="stylesheet" href="~/css/Contenedor_general.css" />
+    <link rel="stylesheet" href="~/css/Tabla.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+          crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/fab0b1407d.js" crossorigin="anonymous"></script>
+</head>
 
-<div class="text-center">
-    <h1 class="display-4">Listado de personas</h1>
+<div class="container contenedor_general">
+    <h3>CONTROL DE PERSONAS</h3>
+    <a type="button" class="btn-success boton boton_success" asp-area="" asp-controller="Persona" asp-action="Index">
+        <i class="fa fa-user-plus"> </i>
+        <span>Agregar</span>
+    </a>
+
+    <table class="table table-striped" id="miTabla">
+        <!--estilo basio de B... para tablas-->
+        <thead class="thead-dark">
+            <!--clase de bootstrap para dar fondo a los head-->
+            <tr class="fila">
+                <th>ID</th>
+                <th>NOMBRE</th>
+                <th>EDAD</th>
+                <th>DESCIPCIÓN</th>
+            </tr>
+        </thead>
+    </table>
 </div>
+@section scripts{
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var tabla = $("#miTabla").DataTable({
+                "ajax": {
+                    "url": '/Persona/ListaPersonas',
+                    "type": "get",
+                    "datatype": "json"
+                },
+                "columns": [
+                    { "data": "idPersona", "name": "idPersona", "autoWidth": true },
+                    { "data": "nombrePersona", "name": "nombrePersona", "autoWidth": true },
+                    { "data": "edadPersona", "name": "edadPersona", "autoWidth": true },
+                    { "data": "descripcionPersona", "name": "descripcionPersona", "autoWidth": true }
+                ]
+            })
+        })
+    </script>
+}
