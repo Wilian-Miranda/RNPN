@@ -56,6 +56,11 @@ namespace RNPN.Controllers
         
         }
 
+        public IActionResult ListaPersonas()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
