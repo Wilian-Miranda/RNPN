@@ -61,7 +61,7 @@ namespace RNPN.Controllers
             return View();
         }
 
-        public JsonResult ListarJson()
+        public IActionResult ListarJson()
         {
             var listaPersonasJson = _persona.ListaPersonas();
             //creando json con la lista anterior
