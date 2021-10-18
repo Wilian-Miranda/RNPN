@@ -59,7 +59,7 @@ namespace RNPN
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Persona}/{action=Index}/{id?}");
+                    pattern: "{controller=Persona}/{action=ListaPersonas}/{id?}");
             });
         }
     }

@@ -1,0 +1,10 @@
+﻿
+td:hover {
+    font-weight: 900;
+}
+table {
+    border: 1px solid gainsboro;
+}
+h3{
+    margin-top:1em !important;
+}
